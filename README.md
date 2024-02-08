@@ -1,6 +1,16 @@
-# GitFetch
-Flutter app for Sook
-This is a two-screen application
-The first is to review all existing repositories according to the github API
-The second is to display the branches of each repositories
-I used the idea of MVC, but in a slightly simpler way
+# gitfetch
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
