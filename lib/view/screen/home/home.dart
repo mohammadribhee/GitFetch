@@ -81,19 +81,21 @@ class HomeState extends State<Home> {
           'Repositories', // Set text color to white
         ),
       ),
-      body: isLoading
-          ? const LoadingIndicator()
-          : Column(
-              children: [
-                SearchField(
-                  searchController: controller.searchController,
-                  onChanged: filterData,
-                ),
-                Expanded(
-                  child: RepositoryList(searchData: searchData),
-                ),
-              ],
-            ),
+      body: SafeArea(
+        child: isLoading
+            ? const LoadingIndicator()
+            : Column(
+                children: [
+                  SearchField(
+                    searchController: controller.searchController,
+                    onChanged: filterData,
+                  ),
+                  Expanded(
+                    child: RepositoryList(searchData: searchData),
+                  ),
+                ],
+              ),
+      ),
       bottomNavigationBar: ReloadButton(
         isLoading: isLoading,
         onPressed: () => fetchData("Q"),

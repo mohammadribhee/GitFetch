@@ -41,7 +41,9 @@ class DetailsState extends State<Details> {
       appBar: AppBar(
         title: const Text('GitHub Branches'),
       ),
-      body: _buildBody(),
+      body: SafeArea(
+        child: _buildBody(),
+      ),
     );
   }
 
